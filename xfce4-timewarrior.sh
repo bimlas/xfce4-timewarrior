@@ -53,11 +53,19 @@ list_tags='
 
 case "$1" in
   "fzf")
-    select_tag_command="$list_tags | fzf --print-query | tail -1 | xargs --null timew start"
+    select_tag_command=" \
+      $list_tags \
+      | fzf --print-query \
+      | tail -1 \
+      | xargs --null --no-run-if-empty timew start"
     txtclick="x-terminal-emulator -e /bin/bash --login -i -c '$select_tag_command'"
     ;;
   "rofi")
-    txtclick="/bin/bash -c '$list_tags | rofi -dmenu | tail -1 | xargs --null timew start'"
+    txtclick="/bin/bash -c ' \
+      $list_tags \
+      | rofi -dmenu \
+      | tail -1 \
+      | xargs --null --no-run-if-empty timew start'"
     ;;
   *)
     echo "Unknown fuzzy filter: $1" >& 2
