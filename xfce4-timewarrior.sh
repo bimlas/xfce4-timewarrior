@@ -23,7 +23,7 @@
 #   * FZF: https://github.com/junegunn/fzf
 #   * ROFI: https://github.com/davatorium/rofi
 
-if [ ! -d "$HOME/.timewarrior" ]; then
+if [ ! -d "${TIMEWARRIORDB:-$HOME/.timewarrior}" ]; then
   echo "EXECUTE 'timew' FROM COMMANDLINE FIRST!"
   exit 1
 fi
