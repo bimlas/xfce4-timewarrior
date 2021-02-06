@@ -1,0 +1,32 @@
+= XFCE TimeWarrior widget
+
+XFCE Generic Monitor widget that allows you to easily *track your time in TimeWarrior*.
+
+image::https://i.imgur.com/9TH46WT.png[]
+
+video::https://i.imgur.com/UC2dbkr.mp4[]
+
+* https://gitlab.com/bimlas/xfce4-timewarrior (main repository)
+* https://github.com/bimlas/xfce4-timewarrior (mirror, *please star if you like the plugin*)
+
+== Create the widget
+
+* Install the packages first if they are not already on your system
+** https://docs.xfce.org/panel-plugins/xfce4-genmon-plugin[XFCE Generic Monitor plugin] (`xfce4-genmon-plugin`)
+** https://timewarrior.net/[TimeWarrior] (`timewarrior`)
+** https://github.com/junegunn/fzf[FZF] (`fzf`) or https://github.com/davatorium/rofi[Rofi] (`rofi`)
+* Add the monitor to the panel
+** Right click on the panel
+** Select _Panel -> Add new items_
+** Add _Generic Monitor_ plugin
+* Set up the generic monitor to use with this script
+** Right click on the newly added generic monitor -> _Properties_
+** Command: `/path/to/xfce4-timewarrior.sh rofi` or `/path/to/xfce4-timewarrior.sh fzf`
+** Uncheck the checkbox of _Label_
+** Set _Period_ to `5` seconds
+
+== Usage
+
+* Click on the text to add new entry
+* Keep the mouse over the text to view the report of today
+* Click on the image to start/stop tracking time with the most recent tag

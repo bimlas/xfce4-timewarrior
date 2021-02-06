@@ -1,27 +1,8 @@
 #!/bin/bash
-# XFCE GenMon widget to add and show entries of time tracker
+# XFCE TimeWarrior: Widget to add and show entries of time tracker
 #
-# How to create GenMon widget:
-#
-#   * Create a new GenMon widget
-#   * Set the command to `/path/to/this/file FILTER`, where FILTER is one of
-#     `fzf` or `rofi`
-#   * Turn off label
-#   * Set the interval to 5 seconds
-#
-# Usage:
-#
-#   * Click on the text to add new entry
-#   * Keep the mouse over the text to view the report of today
-#   * Click on the image to start/stop tracking time with the most recent tag
-#
-# Requirements:
-#
-#   * TimeWarrior: https://timewarrior.net/
-#   * XFCE desktop environment: https://xfce.org
-#   * XFCE GenMon plugin: https://docs.xfce.org/panel-plugins/xfce4-genmon-plugin
-#   * FZF: https://github.com/junegunn/fzf
-#   * ROFI: https://github.com/davatorium/rofi
+# https://gitlab.com/bimlas/xfce4-timewarrior (main repository)
+# https://github.com/bimlas/xfce4-timewarrior (mirror, please star if you like the plugin)
 
 if [ ! -d "${TIMEWARRIORDB:-$HOME/.timewarrior}" ]; then
   echo "EXECUTE 'timew' FROM COMMANDLINE FIRST!"
