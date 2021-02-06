@@ -76,7 +76,7 @@ esac
 cat << __HEREDOC__
 <img>$icon</img>
 <txt>$recent_tag</txt>
-<tool><span font-family="monospace">`timew summary today`</span></tool>
+<tool><span font-family="monospace" allow-breaks="false">`timew summary today`</span></tool>
 <click>$click</click>
 <txtclick>$txtclick</txtclick>
 __HEREDOC__
