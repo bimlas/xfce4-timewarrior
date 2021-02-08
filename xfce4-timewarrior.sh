@@ -36,7 +36,7 @@ case "$1" in
   "fzf")
     select_tag_command=" \
       $list_tags \
-      | fzf --print-query \
+      | fzf --print-query -i \
       | tail -1 \
       | xargs --null --no-run-if-empty timew start"
     txtclick="x-terminal-emulator -e /bin/bash --login -i -c '$select_tag_command'"
@@ -44,7 +44,7 @@ case "$1" in
   "rofi")
     txtclick="/bin/bash -c ' \
       $list_tags \
-      | rofi -dmenu \
+      | rofi -dmenu -i \
       | tail -1 \
       | xargs --null --no-run-if-empty timew start'"
     ;;
