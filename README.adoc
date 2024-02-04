@@ -6,8 +6,7 @@ image::https://i.imgur.com/9TH46WT.png[]
 
 Here's a https://i.imgur.com/UC2dbkr.mp4[screencast] to view in action.
 
-* https://gitlab.com/bimlas/xfce4-timewarrior (main repository)
-* https://github.com/bimlas/xfce4-timewarrior (mirror, *please star if you like the plugin*)
+* https://github.com/bimlas/xfce4-timewarrior (*please star if you like the plugin*)
 
 == Create the widget
 
